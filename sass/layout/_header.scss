@@ -14,8 +14,6 @@
     line-height: 1.14;
     color: $primary-text-color;
     text-decoration: none;
-    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -42,14 +40,8 @@
     margin-right: 30px;
   }
   &.contact-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -57,8 +49,6 @@
 .contact-icon {
   fill: #757575;
   margin-right: 10px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .contact-link:hover & {
     fill: $accent-color;

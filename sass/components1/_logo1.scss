@@ -1,0 +1,12 @@
+.header-logo {
+  color: $title-text-color;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: 700;
+  text-decoration: none;
+
+  & > span {
+    color: $accent-color;
+  }
+}

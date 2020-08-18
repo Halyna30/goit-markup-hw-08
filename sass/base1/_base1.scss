@@ -28,6 +28,7 @@ h2 {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  color: $title-text-color;
 }
 
 h3 {
@@ -46,16 +47,14 @@ img {
   display: block;
 }
 
-.title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: $title-text-color;
-  .team-list-item & {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  .our-work & {
-    margin-top: 0;
+.link {
+  display: inline-block;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
   }
 }
 

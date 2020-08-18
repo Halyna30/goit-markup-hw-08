@@ -1,14 +1,17 @@
 /* Navigation */
 .main-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: $second-text-color;
+  @media screen (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $second-text-color;
+  }
 }
 
 .site-nav {
   position: relative;
+  overflow: hidden;
 }
 .nav-list {
   li:not(:last-child) {
@@ -26,6 +29,8 @@
 
 .btn-menu {
   position: absolute;
+  top: 10px;
+  right: 15px;
   width: 40px;
   height: 40px;
 }
