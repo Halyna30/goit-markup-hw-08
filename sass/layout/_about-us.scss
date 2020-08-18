@@ -43,18 +43,6 @@
   }
 }
 
-.title {
-  .about-us-list & {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-}
-
-.about-us-list h3 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .about-us-list {
   @media screen and (min-width: 768px) {
     display: flex;
