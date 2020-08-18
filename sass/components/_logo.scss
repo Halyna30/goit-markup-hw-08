@@ -1,0 +1,28 @@
+/* Logo */
+.header-logo {
+  margin-right: 86px;
+  & > span {
+    color: $accent-color;
+  }
+}
+
+.footer-logo {
+  & > span {
+    color: $accent-color;
+  }
+  .footer-contacts & {
+    display: block;
+    color: $second-text-color;
+    margin-bottom: 20px;
+  }
+}
+
+.header-logo,
+.footer-logo {
+  color: $title-text-color;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
