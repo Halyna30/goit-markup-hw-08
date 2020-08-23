@@ -6,3 +6,31 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 1140px) {
+  .work-list {
+    display: flex;
+  }
+  .work-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .item-title {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $second-text-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .work-item {
+    position: relative;
+    z-index: 1000;
+  }
+}
