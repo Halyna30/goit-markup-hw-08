@@ -420,12 +420,12 @@ div > b {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%vw;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -454,6 +454,13 @@ div > b {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-top: 5px;
+    margin-right: 81px;
+  }
+}
+
 .main-nav {
   font-weight: 500;
   font-size: 14px;
@@ -465,6 +472,12 @@ div > b {
 
 .main-nav.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -491,10 +504,6 @@ div > b {
   color: #212121;
 }
 
-.nav-title:not(:last-child) {
-  margin-bottom: 40px;
-}
-
 @media screen and (min-width: 768px) {
   .nav-title:not(:last-child) {
     margin-right: 50px;
@@ -502,6 +511,9 @@ div > b {
 }
 
 @media screen and (max-width: 767px) {
+  .nav-title:not(:last-child) {
+    margin-bottom: 40px;
+  }
   .nav-title:last-child {
     margin-bottom: 60px;
   }
@@ -510,35 +522,61 @@ div > b {
 .header-contacts-item a {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   color: #757575;
+  letter-spacing: 0.02em;
+  line-height: 1.16;
   text-decoration: none;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
+  .header-contacts-item {
+    font-size: 18px;
+  }
   .header-contacts-item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .header-contacts-item {
+    font-size: 12px;
+  }
+  .header-contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .header-contacts-item {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .nav-list {
     display: flex;
+    margin-top: 11px;
+    margin-right: 84px;
   }
 }
 
 .header-site-nav {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-site-nav {
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header-site-nav {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    display: flex;
+    padding-top: 21px;
   }
 }
 
@@ -686,6 +724,18 @@ div > b {
   color: #212121;
 }
 
+.item {
+  /*  @media screen (min-width: 768px) and (max-width: 1139px) {
+    margin-bottom: 30px;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .item {
     width: calc((100% - 1 * 30px) / 2);
@@ -707,6 +757,59 @@ div > b {
   }
 }
 
+.about-us-text {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin: 24px 32px;
+}
+
+.footer-invitation .social-list {
+  margin: 0;
+}
+
+.social-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  background-color: #2196f3;
+}
+
+.social-link {
+  display: block;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list .social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-link-item {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icon:hover .team-social-link-item,
+.social-icon:focus .team-social-link-item {
+  fill: #fff;
+}
+
 .our-work {
   padding-top: 47px;
   padding-bottom: 94px;
@@ -716,5 +819,122 @@ div > b {
   .our-work {
     display: none;
   }
+}
+
+.customers-list-logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list-logo:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.customers-list-logo:hover, .customers-list-logo:focus {
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 320px) {
+  .customers-list-logo {
+    width: calc(100% - (2 * 15) / 2);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list-logo {
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list-logo:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .customers-list-logo {
+    flex-wrap: nowrap;
+  }
+  .customers-list-logo:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client-link-item {
+  display: block;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list-logo:hover .client-link-item,
+.customers-list-logo:focus .client-link-item {
+  fill: #2196f3;
+}
+
+.footer {
+  text-align: center;
+  background-color: #2f303a;
+}
+
+.footer .footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .social-list {
+  margin-bottom: 60px;
+}
+
+.footer-invitation b {
+  display: block;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-contacts {
+  margin-bottom: 60px;
+}
+
+.footer-contacts address {
+  color: #ffffff;
+  font-style: normal;
+  line-height: 1.71;
+  font-size: 14px;
+}
+
+.footer-contacts a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #757575;
+  text-decoration: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-text a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-social-link-item {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,6 +9,10 @@
     display: block;
   }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -35,15 +39,15 @@
 }
 
 .nav-title {
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
   @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
     &:last-child {
       margin-bottom: 60px;
     }
@@ -54,21 +58,37 @@
   & a {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     color: $primary-text-color;
+    letter-spacing: 0.02em;
+    line-height: 1.16;
+
     text-decoration: none;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   @media screen and (max-width: 767px) {
+    font-size: 18px;
     &:not(:last-child) {
       margin-bottom: 16px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1140px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .nav-list {
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-top: 11px;
+    margin-right: 84px;
   }
 }

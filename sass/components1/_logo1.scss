@@ -9,4 +9,9 @@
   & > span {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+    margin-right: 81px;
+  }
 }
