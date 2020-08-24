@@ -397,6 +397,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -418,6 +420,8 @@ div > b {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -441,7 +445,8 @@ div > b {
   }
 }
 
-.header-logo {
+.header-logo,
+.footer-logo {
   color: #212121;
   font-family: "Raleway", sans-serif;
   font-size: 24px;
@@ -450,15 +455,29 @@ div > b {
   text-decoration: none;
 }
 
-.header-logo > span {
+.header-logo > span,
+.footer-logo > span {
   color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
-  .header-logo {
+  .header-logo,
+  .footer-logo {
     margin-top: 5px;
     margin-right: 81px;
   }
+}
+
+.footer-logo > span {
+  color: #2196f3;
+}
+
+.footer-contacts .footer-logo {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .main-nav {
@@ -919,7 +938,7 @@ div > b {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1139px;
     height: 400px;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header-tablet-1x.jpg);
   }
@@ -981,12 +1000,6 @@ div > b {
   color: #212121;
 }
 
-.item {
-  /*  @media screen (min-width: 768px) and (max-width: 1139px) {
-    margin-bottom: 30px;
-  } */
-}
-
 @media screen and (max-width: 767px) {
   .item:not(:last-child) {
     margin-bottom: 30px;
@@ -1020,10 +1033,17 @@ div > b {
   line-height: 1.71;
 }
 
+@media screen and (min-width: 768px) {
+  .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: center;
-  margin: 24px 32px;
+  padding-bottom: 24px;
 }
 
 .footer-invitation .social-list {
@@ -1102,6 +1122,83 @@ div > b {
   .work-item {
     position: relative;
     z-index: 1000;
+  }
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-social-link-item {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-list-item {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .team-list-item {
+    width: calc(100% - 0 * 0 / 1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .team-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .team-list-item {
+    width: calc((100% - 90px) / 4);
+  }
+  .team-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-list p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
