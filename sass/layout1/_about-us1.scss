@@ -31,20 +31,13 @@
 }
 
 .item {
-  
-   @media screen and (min-width: 768px) {
-    width: calc((100% - 1 * 30px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
-   
-   .about-us-text {
-      width: 270px;
-      line-height: 1.71;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+    margin: 0;
     .about-us-list &:not(:last-child) {
       margin-right: 30px;
     }
@@ -52,7 +45,10 @@
 }
 
 .about-us-text {
+  width: 100%;
+  line-height: 1.71;
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -64,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .about-us-list {
     display: flex;
   }

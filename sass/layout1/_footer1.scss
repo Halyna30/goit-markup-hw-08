@@ -1,5 +1,4 @@
 .footer {
-  text-align: center;
   background-color: #2f303a;
   .footer-container {
     padding-top: 60px;
@@ -8,6 +7,9 @@
   .social-list {
     margin-bottom: 60px;
   }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-invitation {
@@ -15,6 +17,10 @@
     display: block;
     padding-top: 12px;
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-top: 0;
   }
 }
 
@@ -35,6 +41,12 @@
     text-decoration: none;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 
 .contacts-text {
@@ -54,4 +66,26 @@
   width: 20px;
   height: 20px;
   fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container-item {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+  .footer-invitation {
+    margin-left: 69px;
+  }
+  .footer-container-item {
+    margin-right: 94px;
+  }
+  .footer-contacts {
+    width: 231px;
+  }
 }

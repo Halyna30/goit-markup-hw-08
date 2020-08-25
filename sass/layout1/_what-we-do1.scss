@@ -2,12 +2,12 @@
   padding-top: 47px;
   padding-bottom: 94px;
 
-  @media screen and (max-width: 1139px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .work-list {
     display: flex;
   }
@@ -31,6 +31,8 @@
   }
   .work-item {
     position: relative;
-    z-index: 1000;
+  }
+  .work-image {
+    display: inline-block;
   }
 }

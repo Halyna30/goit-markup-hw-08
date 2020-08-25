@@ -19,7 +19,7 @@
     <!--Шапка страницы-->
     <header class="site-nav">
       <div class="container header-site-nav">
-        <a href="/" class="header-logo"><span>Web</span> Studio </a>
+        <a href="/" class="header-logo"><span>Web</span> Studio</a>
         <div class="main-nav" data-menu>
           <ul class="nav-list">
             <li class="nav-title"><a href="" class="link aktiv">Студия</a></li>
@@ -142,6 +142,7 @@
             <li class="work-list-item">
               <a href="" class="work-item"
                 ><img
+                  srcset="./images/laptop1x.jpg 1x, ./images/laptop2x.jpg 2x"
                   class="work-image"
                   src="./images/img1.jpg"
                   alt="изображение ноутбука"
@@ -153,6 +154,7 @@
             <li class="work-list-item">
               <a href="" class="work-item"
                 ><img
+                  srcset="./images/mobile1x.jpg 1x, ./images/mobile2x.jpg 2x"
                   class="work-image"
                   src="./images/box.jpg"
                   alt="изображение телефона"
@@ -164,6 +166,10 @@
             <li class="work-list-item">
               <a href="" class="work-item"
                 ><img
+                  srcset="
+                    ./images/computer1x.jpg 1x,
+                    ./images/computer2x.jpg 2x
+                  "
                   class="work-image"
                   src="./images/img.jpg"
                   alt="изображение компьютера"
@@ -188,6 +194,7 @@
                     ./images/our-team/ProductDesigner-mob-2x.jpg 2x
                   "
                   media="min-width: 320px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
@@ -195,13 +202,15 @@
                     ./images/our-team/ProductDesigner-tablet-2x.jpg 2x
                   "
                   media="min-width: 768px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
                     ./images/our-team/ProductDesigner-desktop-1x.jpg 1x,
                     ./images/our-team/ProductDesigner-desktop-2x.jpg 2x
                   "
-                  media="min-width: 1140px"
+                  media="min-width: 1200px"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/our-team/ProductDesigner-mob-1x.jpg"
@@ -250,6 +259,7 @@
                     ./images/our-team/frontentDeveloper-mob-2x.jpg 2x
                   "
                   media="min-width: 320px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
@@ -257,13 +267,15 @@
                     ./images/our-team/frontentDeveloper-tablet-2x.jpg 2x
                   "
                   media="min-width: 768px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
                     ./images/our-team/frontentDeveloper-desktop-1x.jpg 1x,
                     ./images/our-team/frontentDeveloper-desktop-2x.jpg 2x
                   "
-                  media="min-width: 1140px"
+                  media="min-width: 1200px"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/our-team/frontentDeveloper-mob-1x.jpg"
@@ -312,6 +324,7 @@
                     ./images/our-team/marketing-mob-2x.jpg 2x
                   "
                   media="min-width: 320px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
@@ -319,13 +332,15 @@
                     ./images/our-team/marketing-tablet-2x.jpg 2x
                   "
                   media="min-width: 768px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
                     ./images/our-team/marketing-desktop-1x.jpg 1x,
                     ./images/our-team/marketing-desktop-2x.jpg 2x
                   "
-                  media="min-width: 1140px"
+                  media="min-width: 1200px"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/our-team/marketing-mob-1x.jpg"
@@ -373,6 +388,7 @@
                     ./images/our-team/UlDesigner-mob-2x.jpg 2x
                   "
                   media="min-width: 320px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
@@ -380,13 +396,15 @@
                     ./images/our-team/UlDesigner-tablet-2x.jpg 2x
                   "
                   media="min-width: 768px"
+                  type="image/jpg"
                 />
                 <source
                   srcset="
                     ./images/our-team/UlDesigner-desktop-1x.jpg 1x,
                     ./images/our-team/UlDesigner-desktop-2x.jpg 2x
                   "
-                  media="min-width: 1140px"
+                  media="min-width: 1200px"
+                  type="image/jpg"
                 />
                 <img
                   class="person"
@@ -486,59 +504,61 @@
     <!--Подвал страницы-->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-contacts">
-          <a href="/" class="footer-logo"><span>Web</span> Studio </a>
-          <ul class="footer-list-contacts">
-            <li class="footer-text footer-item">
-              <address>г. Киев, пр-т Леси Украинки, 26</address>
-            </li>
-            <li class="footer-item">
-              <address class="contacts-text">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </address>
-            </li>
-            <li class="footer-item">
-              <address class="contacts-text">
-                <a href="tel:+380961111111">+38 099 111 11 11</a>
-              </address>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-invitation">
-          <b>присоединяйтесь</b>
-          <ul class="social-list">
-            <li class="social-link">
-              <a href="" aria-label="Instagram icon" class="social-icon">
-                <svg class="footer-social-link-item">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
+        <div class="footer-container-item">
+          <div class="footer-contacts">
+            <a href="/" class="footer-logo"><span>Web</span> Studio </a>
+            <ul class="footer-list-contacts">
+              <li class="footer-text footer-item">
+                <address>г. Киев, пр-т Леси Украинки, 26</address>
+              </li>
+              <li class="footer-item">
+                <address class="contacts-text">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </address>
+              </li>
+              <li class="footer-item">
+                <address class="contacts-text">
+                  <a href="tel:+380961111111">+38 099 111 11 11</a>
+                </address>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-invitation">
+            <b>присоединяйтесь</b>
+            <ul class="social-list">
+              <li class="social-link">
+                <a href="" aria-label="Instagram icon" class="social-icon">
+                  <svg class="footer-social-link-item">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-link">
-              <a href="" aria-label="Twitter icon" class="social-icon">
-                <svg class="footer-social-link-item">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="social-link">
+                <a href="" aria-label="Twitter icon" class="social-icon">
+                  <svg class="footer-social-link-item">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-link">
-              <a href="" aria-label="Facebook icon" class="social-icon">
-                <svg class="footer-social-link-item">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
+              <li class="social-link">
+                <a href="" aria-label="Facebook icon" class="social-icon">
+                  <svg class="footer-social-link-item">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
 
-            <li class="social-link">
-              <a href="" aria-label="Linkedin icon" class="social-icon">
-                <svg class="footer-social-link-item">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <li class="social-link">
+                <a href="" aria-label="Linkedin icon" class="social-icon">
+                  <svg class="footer-social-link-item">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-form-section">
           <b class="footer-form-title">Подпишитесь на рассылку</b>

@@ -67,3 +67,16 @@ div > b {
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  .team-list-item & {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .our-work & {
+    margin-top: 0;
+  }
+}

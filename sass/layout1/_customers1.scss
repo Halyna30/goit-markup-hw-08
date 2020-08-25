@@ -28,7 +28,7 @@
       margin-right: 30px;
     }
   }
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 150px) / 6);
     flex-wrap: nowrap;
     &:not(:last-child) {

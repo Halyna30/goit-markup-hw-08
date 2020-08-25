@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background: rgba(0, 0, 0, 0.2);
   z-index: 5;
   &.is-hidden {
@@ -22,7 +23,8 @@
   flex-direction: column;
   width: 450px;
   height: 609px;
-
+  padding: 40px;
+  overflow-y: scroll;
   background: #ffffff;
   color: #212121;
 
@@ -30,7 +32,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (min-width: 1140px) {
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -40,7 +42,7 @@
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 40px 40px 30px 40px;
+  padding-bottom: 30px;
   margin: 0;
 }
 
@@ -49,7 +51,7 @@
   padding-bottom: 12px;
   padding-left: 16px;
 
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
 
@@ -128,12 +130,13 @@
 
 .form-input {
   position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 28px;
   &.form-input-message {
     margin-bottom: 20px;
   }
+}
+
+.form-input:not(:last-child) {
+  margin-bottom: 28px;
 }
 
 .contact-form-label {
@@ -216,5 +219,16 @@
 .label-email {
   .contact-form-input:focus + & {
     transform: translate(-65%, -230%);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .chekbox {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-message {
+    width: 448px;
   }
 }
