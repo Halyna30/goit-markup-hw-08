@@ -1,4 +1,37 @@
-/* Button */
+.btn-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn-menu-svg {
+  fill: $title-text-color;
+  .btn-menu:hover & {
+    fill: $accent-color;
+  }
+}
+
+.icon-close40 {
+  display: none;
+  .btn-menu.is-open & {
+    display: block;
+  }
+}
+
+.icon-menu {
+  .btn-menu.is-open & {
+    display: none;
+  }
+}
 
 .button {
   display: flex;
@@ -6,7 +39,6 @@
   height: 50px;
   justify-content: center;
   align-items: center;
-
   background-color: $accent-color;
   color: $second-text-color;
   font-weight: 700;
@@ -20,4 +52,9 @@
   border-radius: 4px;
 
   animation-duration: 500ms;
+  .hero & {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }

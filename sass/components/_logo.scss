@@ -1,6 +1,12 @@
-/* Logo */
-.header-logo {
-  margin-right: 86px;
+.header-logo,
+.footer-logo {
+  color: $title-text-color;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: 700;
+  text-decoration: none;
+
   & > span {
     color: $accent-color;
   }
@@ -14,15 +20,23 @@
     display: block;
     color: $second-text-color;
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
   }
 }
 
-.header-logo,
-.footer-logo {
-  color: $title-text-color;
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+    margin-right: 85px;
+  }
+  .footer-logo {
+    font-size: 26px;
+  }
 }

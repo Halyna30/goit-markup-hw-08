@@ -1,8 +1,17 @@
-/* Portfolio button */
-
 .portfolio-list-button {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 
 .list-buttons {
@@ -15,6 +24,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   .list-button-item {
     background: #f5f4fa;
     border-radius: 4px;

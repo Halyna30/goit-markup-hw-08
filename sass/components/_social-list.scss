@@ -1,13 +1,18 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  .footer-invitation & {
+    margin: 0;
+  }
+}
+
 .social-icon {
   display: block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .social-link:hover &,
@@ -30,17 +35,11 @@
 }
 
 .team-social-link-item {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
   .social-icon:hover &,
   .social-icon:focus & {
     fill: #fff;
-  }
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  margin: 24px 32px;
-  .footer-invitation & {
-    margin: 0;
   }
 }

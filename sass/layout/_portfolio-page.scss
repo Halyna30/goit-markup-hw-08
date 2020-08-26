@@ -1,5 +1,11 @@
-/* Portfolio Page */
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding-bottom: 60px;
+  }
+}
 
-.portfolio {
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-bottom: 94px;
+  }
 }
